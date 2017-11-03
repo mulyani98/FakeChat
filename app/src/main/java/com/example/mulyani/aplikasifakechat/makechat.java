@@ -43,7 +43,7 @@ public class makechat extends AppCompatActivity {
         try {
             jsonObject.put("namaPengguna",isiNama.getText().toString());
             jsonObject.put("isiPesan",isiPesan.getText().toString());
-            jsonObject.put("tanggal",new SimpleDateFormat("dd-mm-yyyy").format(Calendar.getInstance().getTime()));
+            jsonObject.put("tanggal",new SimpleDateFormat("dd-MM-yyyy").format(Calendar.getInstance().getTime()));
         }
         catch (JSONException e){
             e.printStackTrace();
